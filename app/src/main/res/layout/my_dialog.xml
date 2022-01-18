@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收入"
+            android:textColor="#000" />
+
+        <RadioButton
+            android:id="@+id/expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支出"
+            android:textColor="#000" />
+    </RadioGroup>
+    <!--需要对上面的二选一进行监听，来决定下面的复选框的内容-->
+    <Spinner
+        android:id="@+id/choice"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal">
+        <Spinner
+            android:id="@+id/year"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:text="年"
+            android:layout_marginHorizontal="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/month"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:text="月"
+            android:layout_marginHorizontal="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:id="@+id/day"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:text="日"
+            android:layout_marginHorizontal="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal">
+        <EditText
+            android:id="@+id/amount"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="元"
+            android:layout_marginHorizontal="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/decide_add"
+        android:text="确认添加"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"/>
+    
+
+</LinearLayout>

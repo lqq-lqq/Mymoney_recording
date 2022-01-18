@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SumActivity"
+    android:orientation="vertical"
+    android:background="#FFCCCC">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginVertical="20dp">
+            <Button
+                android:id="@+id/oneYear"
+                android:text="年收支"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp" />
+            <Button
+                android:id="@+id/oneMonth"
+                android:text="月收支"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp" />
+            <Button
+                android:id="@+id/oneDay"
+                android:text="日收支"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp" />
+
+        </LinearLayout>
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pie_chart"
+            android:layout_margin="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginVertical="5dp">
+        <TextView
+            android:text="总收入 ￥"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="65px"/>
+        <TextView
+            android:id="@+id/income"
+            android:text="000.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="65px"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginVertical="5dp">
+        <TextView
+            android:text="总支出 ￥"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="65px"/>
+        <TextView
+            android:id="@+id/expense"
+            android:text="000.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="65px"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <TextView
+        android:text="最近五次记录"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50px"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:id="@+id/recentFive"
+        android:text="      测试           "
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:textSize="35px"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>
